@@ -1,0 +1,55 @@
+<!DOCTYPE html><!---->
+<html lang="pt-BR">
+	<head>
+	  <meta charset="UTF-8">
+		<title>teste</title>
+	</head>
+<body>
+  
+	<h1>Olá, mundo!</h1>
+	<h2>subtitulo h2</h2>
+	<h3>subtitulo h3</h3>
+	<h4>subtitulo h4</h4>
+	<h5>subtitulo h5</h5>
+	<h6>subtitulo h6</h6>
+	<p>Parágrafo html</p>
+	
+	<h2>Lista de compras não ordenada</h2>
+	<ul>
+	  <li>Maças</li>
+	    <ul>
+	      <li>Verde</li>
+	      <li>Verde</li>
+	    </ul>
+	  <li>Pão</li>
+	    <ul>
+	      <li>Doce</li>
+	      <li>Sal</li>
+	    </ul>
+	  <li>Leite</li>
+	    <ul>
+	      <li>desnatado</li>
+	      <li>integral</li>
+	    </ul>
+	  <li>Ovos</li>
+	    <ul>
+	      <li>caipira</li>
+	      <li>normal</li>
+	    </ul>
+	</ul>
+	
+	<h2>Lista de compras ordenada</h2>
+	<ol>
+	  <li>Maças</li>
+	  <li>Pão</li>
+	  <li>Leite</li>
+	  <li>Ovos</li>
+	</ol>
+	
+	<dl>
+	  <dt>Texto1</dt>
+	  <dd>HTML - HyperText Markup Language</dd>
+	</dl>
+
+</body>
+</html>
