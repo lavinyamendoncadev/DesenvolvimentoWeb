@@ -1,11 +1,11 @@
-<!DOCTYPE html><!---->
-<html lang="pt-BR">
-	<head>
-	  <meta charset="UTF-8">
-		<title>teste</title>
+<!DOCTYPE html><!--tipo de documento html versão 5 desde 2014-->
+<html lang="pt-BR"><!--reconhecimento de linguagem latina-->
+	<head><!--cabeçalho da página, metadados não visíveis-->
+	  <meta charset="UTF-8"><!--reconhecimento de caracteres-->
+		<title>teste</title><!--título da página-->
 	</head>
-<body>
-  
+<body><!--corpo da página, conteudo visível-->
+  	<!--Tipos de títulos de texto-->
 	<h1>Olá, mundo!</h1>
 	<h2>subtitulo h2</h2>
 	<h3>subtitulo h3</h3>
@@ -14,12 +14,12 @@
 	<h6>subtitulo h6</h6>
 	<p>Parágrafo html</p>
 	
-	<h2>Lista de compras não ordenada</h2>
+	<h2>Lista de compras não ordenada</h2><!--exemplo de listas aninhadas-->
 	<ul>
 	  <li>Maças</li>
 	    <ul>
 	      <li>Verde</li>
-	      <li>Verde</li>
+	      <li>Vermelha</li>
 	    </ul>
 	  <li>Pão</li>
 	    <ul>
@@ -45,7 +45,8 @@
 	  <li>Leite</li>
 	  <li>Ovos</li>
 	</ol>
-	
+
+	<!--lista discritiva-->
 	<dl>
 	  <dt>Texto1</dt>
 	  <dd>HTML - HyperText Markup Language</dd>
