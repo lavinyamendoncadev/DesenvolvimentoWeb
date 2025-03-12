@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Lavinya Mendonça">
+    <meta name="Desenvolvimento Web" content="Exercício Aula 2"> 
+    <meta name="Assunto de Aula" content="Imagens e Tabelas"> 
+    <title>Wiki: Poções HP</title>
+</head>
+<body>
+    <h1>Guia de poçoes da Escola de Magia de Hogwarts</h1>
+    <h3>Guia de poções:</h3>
+    <h2>Algumas poções:</h2>
+    <table width="600" border="1" cellspacing="0" cellpadding="5" bordercolor="red">
+        <tr>
+            <th>Poção</th>
+            <th>Descrição</th>
+            <th>Efeitos colaterais</th>
+        </tr>
+        <tr>
+            <td>Poção Polissuco</td>
+            <td>A poção polissuco permite que a mudança da aparência física para o DNA adicionado</td>
+            <td>Pode causa cantorias excessivas e coceiras no nariz</td>
+        </tr>
+        <tr>
+            <td>Poção Morto-vivo</td>
+            <td>Essa poção faz quem a bebe entrar em um sono profundo</td>
+            <td>Duração indefinida</td>
+        </tr>
+        <tr>
+            <td>Poção Amortentia</td>
+            <td>Essa poção provoca uma paixão poderosa a quem a bebe</td>
+            <td>Quem fizer uso dessa poção pode se tornar obssessivo de forma totalmente exagerada</td>
+
+        </tr>
+    </table>
+
+    <h2>Menções nos filmes:</h2>
+    <h2>Poção Polissuco:</h2>
+    <h3>Hermine Granger faz a utilização dessa poção para espionar e retirar informações de Draco Malfoy e acaba se tornando um felino acidentalmente.</h3>
+    <figure class="html5">
+        <img src="polissuco.jpg" alt="Poção Polissuco" width="300" height="400">
+        <img src="hermione.jpg" alt="Poção Polissuco" width="300" height="400">
+    </figure>
+    
+    <h2>Poção Morto-vivo:</h2>
+    <h3>Essa poção é mencionada em o Enigma do Príncipe no livro do Píncipe Mestiço.</h3>
+    <img src="mortovivo.jpg" alt="Poção Polissuco" width="300" height="400">
+
+    <h2>Poção Amortentia:</h2>
+    <h3>A poção Amortentia foi usada em Rony Wesley para fazer com que ele se apaixonasse pela pessoa que a aplicou (secretamente). </h3>
+    <img src="amortentia.jpg" alt="Poção Polissuco" width="300" height="400">
+    
+</body>
+</html>
