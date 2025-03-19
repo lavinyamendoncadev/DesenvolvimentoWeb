@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+</head>
+<body>
+    <main>
+        <h1>Inscriçao</h1>
+        <form action="/submit_form" method="post">
+            <div>
+                <h2>Dados do aluno</h2>
+                <label for="name">Nome completo:</label><br>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required><br><br>
+
+                <label for="datanascimento" id="datanascimento" name="datanascimento">Data de nascimento:</label><br>
+                <input type="date" id="datanascimento" name="datanascimento" min="17" max="99"><br><br>
+
+                <label>Gênero</label><br>
+                <input type="radio" id="m" name="genero">
+                <label for="m">Maculino</label><br>
+                <input type="radio" id="f" name="genero">
+                <label for="f">Feminino</label><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+
+                <label for="telefone">Contato telefone:</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="Celular"><br><br>
+
+                <label for="password">Digite uma senha:</label><br>
+                <input type="password" id="password" name="password" placeholder="senha"><br><br>
+            </div>
+
+            <div>
+                <h2>Curso</h2>
+                <label for="curso" id="curso" name="curso">Selecione um curso:</label>
+                <select name="cursos">
+                    <option value="curso1">Ciência da computação</option>
+                    <option value="curso2">Engenharia de software</option>
+                    <option value="curso3">Engenharia da computação</option>
+                    <option value="curso4">Análise e desenvolvimento de sistemas</option>
+                    <option value="curso5">Sistemas de informação</option>
+                    <option value="curso6">Redes de computadores</option>
+                    <option value="curso7">Análise de dados</option>
+                </select>
+            </div>
+
+            <div>
+                <h2>Nos conte sobre você?</h2>
+                
+                <label for="corfav" id="corfav" name="corfav">Cor favorita:</label><br>
+                <p>Nos conte sua cor favorita:</p>
+                <input type="color" id="corfav" name="corfav"><br><br>
+
+                <label for="hobbies" id="hobbies" name="hobbies"> Seus hobbies:</label>
+                <textarea type="text" id="hobbies" name="hobbies" rows="5"></textarea>
+                
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
