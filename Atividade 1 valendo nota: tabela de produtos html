@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de produtos</title>
+    <link rel="stylesheet" href="/produtos/prod.css">
+</head>
+<body>
+    <div>
+        <table class="tabela">
+            <caption>Produtos disponíveis</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+            
+            <tr>
+                <td>Blusa</td>
+                <td>Blusa lisa cor sólida azul</td>
+                <td>R$50</td>
+            </tr>
+            
+            <tr>
+                <td>Camisa</td>
+                <td>Camisa estampada floral</td>
+                <td>R$70</td>
+            </tr>
+            <tr>
+                <td>Calça</td>
+                <td>Calça jeans lavagem clara</td>
+                <td>R$100</td>
+            </tr>
+            
+        </table>
+
+    </div>
+</body>
+</html>
