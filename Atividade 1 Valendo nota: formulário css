@@ -1,0 +1,26 @@
+.forms{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    background-color: bisque;
+    padding: 65px;
+    margin: auto;
+    height: 270%;
+    width: 55%;
+    text-align: center;
+}
+
+h2{
+    color: rgb(185, 111, 51);
+}
+
+button{
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(230, 105, 84);
+    color: aliceblue;
+
+}
