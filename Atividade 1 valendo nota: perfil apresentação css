@@ -1,0 +1,43 @@
+body{
+   
+    /*Alinhando os itens dentro do body no centro da página*/
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+
+img{
+    /*Definindo tamanho da imagem*/
+    width: 100px;
+    height: 100px;
+    /*Dimensionando a imagem de acordo com as dimensões de tamanho definidas*/
+    object-fit: cover; /*preenche todo o elemento com a menor dimensão da imagem, 
+    adaptando a maior dimensão conforme a proporção original, 
+    ocultando o conteúdo da imagem que excede as dimensões do elemento;*/
+    border-radius: 50px; /*Arredondando a imagem*/
+}
+
+.sobre{
+    color: #000000; /*Definindo a cor do texto*/
+    font-size: 17px;  /*Definindo o tamanho da fonte*/
+    letter-spacing: 1px; /*Definindo o espaçamento entre as letras*/
+    line-height: 17px; /*Definindo o espaçamento entre as linhas*/
+    max-width: 600px; /*Largura que o texto/linha ocupa na página*/
+    margin: auto; /*Para centralizar o texto na página*/
+    padding: 5px; /*Para definir a distância entre o texto e a borda da caixa*/
+}
+
+p{
+    margin-bottom: 5px; /*Para definir a distância entre o parágrafo e o próximo elemento*/
+    margin-top: 5px; /*Para definir a distância entre o parágrafo e o elemento anterior*/
+}
+
+li{
+    list-style-type: none; /*Para retirar os marcadores de lista não-ordenada */
+    display: inline-block; /*Para exibir as <li> na horizontal uma da outra*/
+    border: 2px solid black; /*dimensionamento de borda*/
+    border-radius: 8px; /*Arredondamento das bordas*/
+    padding: 10px; /*Distância interna entre o conteúdo da <li> e a borda*/
+    background-color: #c1f5b6; /*cor de fundo da caixa de borda*/
+    margin-right: 8px; /*Para definir a distância entre uma <li> e outra*/
+}
