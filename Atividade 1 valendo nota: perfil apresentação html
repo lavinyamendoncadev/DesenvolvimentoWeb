@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <link rel="stylesheet" href="/perfil/style.css">
+</head>
+<body>
+     <div class="sobre">
+        <!--Imagem de perfil-->
+        <figure>
+            <img src="img/WhatsApp Image 2025-05-12 at 15.00.41.jpeg" alt="Foto de Lavinya Ellen Henrique Mendonça">
+        </figure>
+        <!--Nome-->
+        <h1>Lavinya Ellen Henrique Mendonça</h1><br>
+        <!--Informações de curso-->
+        <p>Estudante graduando em Ciência da computação</p><br>
+        <!--Escrever texto de onjetivo profissional-->
+        <p>Objetivo profissinal: "Atuar na área de Tecnologia da Informação, contribuindo com meus conhecimentos em desenvolvimento de sistemas, resolução de problemas técnicos e melhoria contínua de processos, visando o crescimento da empresa e meu desenvolvimento profissional."</p>
+    </div> 
+    
+    <!--Lista descrevendo as habilidades-->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>Java</li>
+    </ul>
+
+    <!--local de links para redes sociais-->
+    <div id="links">
+    </div>
+    
+    <!--Link de integração do JavaScript da página-->
+    <link src="script.js">
+</body>
+</html>
