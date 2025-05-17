@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/formulario/style.css">
+</head>
+<body>
+    <div class="forms">
+        <forms>
+            <h2>Formulário de contato</h2>
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <label>E-mail:</label>
+            <input type="text" name="email" placeholder="Digite seu email" required>
+            <label>Mensagem:</label>
+            <textarea placeholder="Digite uma mensagem" rows="5"></textarea>
+
+            <button>Enviar</button>
+    </forms>
+
+    </div>
+    
+</body>
+</html>
