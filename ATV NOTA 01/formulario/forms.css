@@ -1,0 +1,19 @@
+.quadrado{ /*Centraliza o fieldset no centro da página e os itens do forms no centro*/
+  width: 30%;
+  margin: 150px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(218, 250, 158);
+  border-radius: 30px;
+}
+
+button{
+    background-color: rgb(4, 41, 4);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+

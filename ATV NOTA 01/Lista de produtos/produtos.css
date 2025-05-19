@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    min-width: 100vh; /*fazendo com que a página cresça de acordo com o conteúdo*/
+}
+
+h1{
+    background-color: rgb(115, 204, 122);
+    padding: 10px;
+}
+
+p{
+    font-size: 18px;;
+}
+
+table{
+    align-items: center; /*alinhando itens do table no centro da página*/
+    margin: auto; /*centralizando itens na página, tentei colocar dentro do body mas nao funcionou*/
+    margin-bottom: 20px;
+    border-spacing: 0px; /*para tirar o espaçamento entre as bordas - não funciona somente no td*/
+}
+
+td{
+    border: 0.5px solid rgba(209, 205, 205, 0.904); /*para tirar a borda*/
+    padding: 7px; 
+}
+
+a{
+    color: rgb(33, 78, 44);
+}
+
+a:hover{
+    color: blue;
+}
+
+.header{
+    background-color: rgb(117, 187, 107);
+    color: rgb(9, 70, 3);
+    text-align: center;
+}	
+
+.corpo{
+    background-color: rgb(255, 255, 255);
+}
+
+footer{
+    background-color: rgb(115, 204, 122);
+    padding: 10px;
+    color: rgb(12, 73, 15);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 170px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+   
+}
