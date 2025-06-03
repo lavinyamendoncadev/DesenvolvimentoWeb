@@ -1,0 +1,52 @@
+<?php
+try{
+  $pdo=new PDO('sqlite: database.db');
+
+  $sql = "CREATE TABLE IF NOT EXISTS usuarios(
+    id INTEGER PRIMARU KEY AUTOINCREMENT,
+    nome TEST NOT NULL,
+    idade INTEGER NOT NULL,
+    email TEXT NOT NULL
+  )";
+
+  $pdo->exec($sql);
+
+  if($_SERVER["REQUEST_METHOD"] == "POST""){
+    $nome = $_POST["nome"];
+    $idade = $_POST["idade"];
+    $email = $_POST["email"];
+
+    $stmt = &pdo->prepare("INSERT TO usuarios (nome, idade, email) VALUES (:nome, :idade, :email)");
+
+    $stmt->bindParam(':nome', $nome);
+    $stmt->bindParam(':idade', $idade);
+    $stmt->bindParam(':email',
+    $stmt->execute();
+
+    echo "Dados inseridos com sucesso!";}
+} catch(PDOException $e){
+  echo "Erro: " . $e->getMessage();
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inserção</title>
+</head>
+<body>
+    <h2>Formulário de Inserção de dados</h2>
+    <form method="post" action="index.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>  
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade" required><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
