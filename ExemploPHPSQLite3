@@ -1,0 +1,83 @@
+<?php
+try{
+  $pdo=new PDO( 'sqlite:database.db');
+  $sql='CREATE TABLE IF NOT EXISTS users(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    email TEXT,
+  )';
+
+  $pdo->exec($sql);
+
+  $action = isset($_GET['action']) ? $_GET['action']:'';
+
+  if($action == 'create'){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $stmt = $pdo->prepare("INSERT INTO usuarios (nome,email) VALUES (:nome,:email)");
+    $stmt->bindParam(':nome',$name);
+    $stmt->bindParam(':email',$email);
+    if($stmt->execute()){
+      echo "Usuário criado com sucesso!";
+    } else{echo "Erro ao criar usuário.";}
+  }
+}
+
+if($action == 'read'){
+  $stmt = $pdo->query("SELECT * FROM usuarios");
+  $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  echo json_encode($result);
+}
+
+if($action == 'update'){
+  $id = $_POST['id'];
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $stmt = $pdo->prepare("UPDATE usuarios SET nome = :nome, email = :email WHERE id = :id");
+  $stmt->bindParam(':nome',$name);
+  $stmt->bindParam(':email',$email);
+  $stmt->bindParam(':id',$id);
+  if($stmt->execute()){
+    echo "Usuário atualizado com sucesso!";
+  } else{echo "Erro ao atualizar usuário.";}
+}
+
+if($action == 'delete'){
+  $id = $_POST['id'];
+  $stmt = $pdo->prepare("DELETE FROM usuarios WHERE id = :id");
+  $stmt->bindParam(':id',$id);
+  if($stmt->execute()){
+    echo "Usuário deletado com sucesso!";
+  } else{echo "Erro ao deletar usuário.";}
+}
+  catch(PDOException $e){
+  echo "Erro: ".$e->getMessage();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud com php, js, sqlite</title>
+    <script>
+        function loadData(){
+          fetch('index.php?action=read')
+            then(response => response.json())
+            then(data =>{
+                 let table = document.getElementById('data');
+                 table.innerHTML = '';
+                 data.forEach(row =>{
+                              table.innerHTML += `<tr>
+                              <td>${row.id}</td>
+                              <td>${row.name}</td>
+                              <td>${row.email}</td>
+                              <td><button onclick="edit(${row.id}, '${row.name}', '${row.email}')">Editar</button>
+                              <button onclick="delete(${row.id})">Deletar</button>
+                   </td>
+                  </tr>`;
+                 });
+            });
+        }
+    </script>
+</head>
