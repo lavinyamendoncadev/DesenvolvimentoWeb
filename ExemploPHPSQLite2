@@ -1,0 +1,60 @@
+<?php
+try{
+  $pdo=new PDO('sqlite:database.db');
+
+  $sql="CREATE TABLE IF NOT EXISTIS usuarios(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  email TEXT NOT NULL,
+  )";
+
+  $pdo->exec($sql);
+
+  if($_SERVER['REQUEST_METHOD']=="POST"){
+    $nome=$_POST['nome'];
+    $email=$_POST['email'];
+
+    $stmt = $pdo->prepare("INSERT INTO usuarios(nome, email) VALUES(:nome, :email)");
+    $stmt->bindParam(':nome', $nome);
+    $stmt->bindParam(':email', $email);
+    $stmt->execute();
+
+    echo "Usuário cadastrado com sucesso!";
+  }
+} catch(PDOException $e){
+  echo "Erro: ".$e->getMessage();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação JavaScript</title>
+    <script>
+        function validarFormulario(){
+          var nome = document.forms["formulario"]["nome"].value;
+          var email = document.forms["formulario"]["email"].value;  
+
+          if(nome=="" || email==""){
+            alert("Por favor, preencha todos os campos.");
+            return false;
+          }
+          return true;
+        }
+    </script>
+</head>
+<body>
+  <h2>Formulário de Inserção com Validação JavaScript</h2>
+
+  <form name="formulario" action="" method="post" onsubmit="return validarFormulario()">"></form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+   <input type="submit" value="Enviar">  
+  </form>
+</body>
